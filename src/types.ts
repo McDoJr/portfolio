@@ -1,0 +1,1 @@
+export type View = "about" | "tech-stack" | "experience" | "projects";

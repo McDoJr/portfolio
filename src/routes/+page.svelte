@@ -10,7 +10,7 @@
 </script>
 
 <Title />
-<Section classname="px-12 lg:px-0 gap-6">
+<Section classname="px-6 sm:px-12 lg:px-0 gap-6">
     <Container classname="flex-col lg:flex-row gap-4">
         <Sidebar />
         <Scroll />

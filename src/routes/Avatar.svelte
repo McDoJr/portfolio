@@ -10,6 +10,7 @@
         function handleResize() {
             const width = window.innerWidth;
             size = width < 1024 ? 500 : defaultSize;
+            size = width <= 480 ? 200 : size;
         }
 
         handleResize();

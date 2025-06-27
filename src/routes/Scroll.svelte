@@ -26,8 +26,6 @@
         const scrollY = rect.top - 96;
         const hasReachedTop = scrollY <= 0;
         const hasPassedBy = scrollY + element.clientHeight <= 0;
-        console.log(elementId);
-        console.log(`${scrollY}`);
         return hasReachedTop && !hasPassedBy && !$clicked;
     }
 

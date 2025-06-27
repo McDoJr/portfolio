@@ -13,7 +13,7 @@
     )}
     {...props}
 >
-    <h1 class="inline text-xl font-[500] mb-6 lg:hidden">ABOUT</h1>
+    <h1 class="inline text-lg font-[500] mb-6 lg:hidden">ABOUT</h1>
     <p>
         I’m a junior full-stack web developer with experience in Next.js,
         Svelte, React, Node.js, Express, Supabase, Strapi, PosgreSQL and MySQL.
@@ -34,7 +34,7 @@
     </p>
 
     <div class="flex flex-col gap-8 mt-24">
-        <span class="text-xl font-[500]">TECH STACK</span>
+        <span class="text-lg font-[500]">TECH STACK</span>
         <div class="flex items-center flex-wrap gap-6">
             <Tech name="HTML" path="html5.svg" />
             <Tech name="CSS" path="css3.svg" />

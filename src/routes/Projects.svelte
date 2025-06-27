@@ -13,7 +13,7 @@
     )}
     {...props}
 >
-    <h1 class="inline text-xl font-[500] mb-6 lg:hidden">PROJECTS</h1>
+    <h1 class="inline text-lg font-[500] mb-6 lg:hidden">PROJECTS</h1>
     <ProjectCard
         title="Office of Civil Defense Caraga — Document Tracking"
         description="A tool to track, manage, and monitor documents in real-time, ensuring transparency and faster processing within the Office of Civil Defense Caraga."

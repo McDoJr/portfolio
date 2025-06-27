@@ -8,15 +8,16 @@
     import view from "../store/view";
     import clicked from "../store/clicked";
     import type { View } from "../types";
+    import { ExternalLink, MoveUpRight } from "@lucide/svelte";
     type ScrollEvent = UIEvent & {
         currentTarget: EventTarget & HTMLDivElement;
     };
 
     let prevScroll = 0;
 
-    function isBottomReached(element: HTMLElement) {
-        return element.scrollTop + element.clientHeight >= element.scrollHeight;
-    }
+    // function isBottomReached(element: HTMLElement) {
+    //     return element.scrollTop + element.clientHeight >= element.scrollHeight;
+    // }
 
     function isWithinView(elementId: View) {
         const element = document.getElementById(elementId);
@@ -25,23 +26,25 @@
         const scrollY = rect.top - 96;
         const hasReachedTop = scrollY <= 0;
         const hasPassedBy = scrollY + element.clientHeight <= 0;
+        console.log(elementId);
+        console.log(`${scrollY}`);
         return hasReachedTop && !hasPassedBy && !$clicked;
     }
 
     function scroll(event: ScrollEvent) {
         const element = event.currentTarget;
         const scrollY = element.scrollTop;
-        if (scrollY > prevScroll && !$clicked && isBottomReached(element)) {
-            $view = "projects";
-            return;
-        }
+        // if (scrollY > prevScroll && !$clicked && isBottomReached(element)) {
+        //     $view = "projects";
+        //     return;
+        // }
 
         if (isWithinView("about")) {
             $view = "about";
         } else if (isWithinView("experience")) {
             $view = "experience";
-        } else if (isWithinView("about")) {
-            $view = "about";
+        } else if (isWithinView("projects")) {
+            $view = "projects";
         }
 
         prevScroll = scrollY;
@@ -56,6 +59,16 @@
     <div class="lg:w-[675px] pb-20 flex flex-col lg:py-20 lg:pt-24">
         <About />
         <Experience classname="mt-40" />
-        <Projects classname="mt-60" />
+        <Projects classname="mt-40" />
+        <div class="mt-40">
+            <a
+                class="flex items-center gap-2 text-neutral-400 hover:text-white"
+                href="https://profile.indeed.com/p/karlmarfredb-kphbngj"
+                target="_blank"
+            >
+                <span>View Indeed.com Resume</span>
+                <ExternalLink size={18} />
+            </a>
+        </div>
     </div>
 </div>

@@ -1,6 +1,7 @@
 <script lang="ts">
     import { twMerge } from "tailwind-merge";
     import Tech from "./Tech.svelte";
+    import Resume from "./Resume.svelte";
 
     let { classname = "", ...props } = $props();
 </script>
@@ -32,6 +33,8 @@
         I’m passionate about problem-solving and always eager to learn and apply
         new technologies. Let’s build something great together! 🚀
     </p>
+
+    <Resume classname="mt-6" />
 
     <div class="flex flex-col gap-8 mt-24">
         <span class="text-lg font-[500]">TECH STACK</span>

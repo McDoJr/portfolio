@@ -1,25 +1,44 @@
 <script>
-    import { Github, Facebook, Mail } from "@lucide/svelte";
+    import Fa from "svelte-fa";
+    import {
+        faUpwork,
+        faGithub,
+        faFacebookF,
+    } from "@fortawesome/free-brands-svg-icons";
     import { twMerge } from "tailwind-merge";
+    import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
     let { classname = "", ...props } = $props();
 </script>
 
 <div class={twMerge("flex gap-6 mt-auto text-zinc-400", classname)} {...props}>
     <a href="https://github.com/mcdojr" target="_blank">
-        <Github
-            class="cursor-pointer hover:text-white transition-colors duration-200"
+        <Fa
+            icon={faGithub}
+            class="cursor-pointer text-xl hover:text-white transition-colors duration-200"
         />
     </a>
 
     <a href="https://www.facebook.com/iamkbej/" target="_blank">
-        <Facebook
-            class="cursor-pointer hover:text-white transition-colors duration-200"
+        <Fa
+            icon={faFacebookF}
+            class="cursor-pointer text-xl hover:text-white transition-colors duration-200"
+        />
+    </a>
+
+    <a
+        href="https://www.upwork.com/freelancers/~01141818a54508e446"
+        target="_blank"
+    >
+        <Fa
+            icon={faUpwork}
+            class="cursor-pointer text-[22px] hover:text-white transition-colors duration-200"
         />
     </a>
 
     <a href="mailto:iamkbejj@gmail.com">
-        <Mail
-            class="cursor-pointer hover:text-white transition-colors duration-200"
+        <Fa
+            icon={faEnvelope}
+            class="cursor-pointer text-xl hover:text-white transition-colors duration-200"
         />
     </a>
 </div>

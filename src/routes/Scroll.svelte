@@ -8,7 +8,7 @@
     import view from "../store/view";
     import clicked from "../store/clicked";
     import type { View } from "../types";
-    import { ExternalLink, MoveUpRight } from "@lucide/svelte";
+    import Resume from "./Resume.svelte";
     type ScrollEvent = UIEvent & {
         currentTarget: EventTarget & HTMLDivElement;
     };
@@ -59,14 +59,25 @@
         <Experience classname="mt-40" />
         <Projects classname="mt-40" />
         <div class="mt-40">
-            <a
-                class="flex items-center gap-2 text-neutral-400 hover:text-white"
-                href="https://profile.indeed.com/p/karlmarfredb-kphbngj"
-                target="_blank"
+            <span class="text-neutral-500 text-[16px]"
+                >Built with
+                <a
+                    class="hover:text-white text-neutral-400"
+                    href="https://svelte.dev/docs/svelte/overview"
+                    target="_blank">Svelte</a
+                >
+                and
+                <a
+                    class="hover:text-white text-neutral-400"
+                    href="https://tailwindcss.com/"
+                    target="_blank">Tailwind CSS</a
+                >, deployed with
+                <a
+                    class="hover:text-white text-neutral-400"
+                    href="https://www.netlify.com/"
+                    target="_blank">Netlify</a
+                >.</span
             >
-                <span>View Indeed.com Resume</span>
-                <ExternalLink size={18} />
-            </a>
         </div>
     </div>
 </div>

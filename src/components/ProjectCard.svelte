@@ -12,7 +12,7 @@
 </script>
 
 <div
-    class="w-full py-6 rounded flex flex-col sm:flex-row gap-6 hover:px-6 hover:bg-white/5 transition-all hover:shadow-md cursor-pointer"
+    class="w-full py-4 rounded flex flex-col sm:flex-row gap-6 hover:px-4 hover:bg-white/3 transition-all hover:shadow-md cursor-pointer"
 >
     <div class="w-[160px] h-[100px] rounded border-2 border-neutral-600">
         <img class="w-full h-full" src={thumbnail} alt="thumbnail.jpeg" />

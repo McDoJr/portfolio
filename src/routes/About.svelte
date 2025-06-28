@@ -34,7 +34,7 @@
         new technologies. Let’s build something great together! 🚀
     </p>
 
-    <Resume classname="mt-6" />
+    <Resume classname="mt-6 self-start" />
 
     <div class="flex flex-col gap-8 mt-24">
         <span class="text-lg font-[500]">TECH STACK</span>

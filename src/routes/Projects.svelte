@@ -15,6 +15,12 @@
 >
     <h1 class="inline text-lg font-[500] mb-6 lg:hidden">PROJECTS</h1>
     <ProjectCard
+        title="Medico Realty App"
+        description="A comprehensive real estate management system that consolidates client data, financial records, and documentation into a single platform, improving accuracy, transparency, and workflow efficiency for realty businesses."
+        thumbnail="/realty1.png"
+        techs={["NextJS", "Typescript", "Tailwind", "Shadcn", "MySQL"]}
+    />
+    <ProjectCard
         title="Office of Civil Defense Caraga — Document Tracking"
         description="A tool to track, manage, and monitor documents in real-time, ensuring transparency and faster processing within the Office of Civil Defense Caraga."
         thumbnail="/dtr1.png"

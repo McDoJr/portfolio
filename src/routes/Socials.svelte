@@ -4,6 +4,7 @@
         faUpwork,
         faGithub,
         faFacebookF,
+        faLinkedinIn,
     } from "@fortawesome/free-brands-svg-icons";
     import { twMerge } from "tailwind-merge";
     import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -21,6 +22,16 @@
     <a href="https://www.facebook.com/iamkbej/" target="_blank">
         <Fa
             icon={faFacebookF}
+            class="cursor-pointer text-xl hover:text-white transition-colors duration-200"
+        />
+    </a>
+
+    <a
+        href="https://www.linkedin.com/in/karl-bejerano-232121298/"
+        target="_blank"
+    >
+        <Fa
+            icon={faLinkedinIn}
             class="cursor-pointer text-xl hover:text-white transition-colors duration-200"
         />
     </a>

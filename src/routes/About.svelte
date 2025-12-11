@@ -38,26 +38,103 @@
 
     <div class="flex flex-col gap-8 mt-24">
         <span class="text-lg font-[500]">TECH STACK</span>
-        <div class="flex items-center flex-wrap gap-6">
-            <Tech name="HTML" path="html5.svg" />
-            <Tech name="CSS" path="css3.svg" />
-            <Tech name="Javascript" path="javascript.svg" />
-            <Tech name="Typescript" path="typescript.svg" />
-            <Tech name="Tailwind" path="tailwindcss.svg" />
-            <Tech name="Svelte" path="svelte.svg" />
-            <Tech name="React" path="react.svg" />
-            <Tech name="NextJS" path="nextdotjs.svg" />
+        <div class="grid grid-cols-4 sm:grid-cols-5">
+            <Tech
+                name="HTML"
+                path="html5.svg"
+                url="https://skillicons.dev/icons?i=html"
+            />
+            <Tech
+                name="CSS"
+                path="css3.svg"
+                url="https://skillicons.dev/icons?i=css"
+            />
+            <Tech
+                name="Javascript"
+                path="javascript.svg"
+                url="https://skillicons.dev/icons?i=js"
+            />
+            <Tech
+                name="Typescript"
+                path="typescript.svg"
+                url="https://skillicons.dev/icons?i=ts"
+            />
+            <Tech
+                name="Tailwind"
+                path="tailwindcss.svg"
+                url="https://skillicons.dev/icons?i=tailwind"
+            />
+            <Tech
+                name="Svelte"
+                path="svelte.svg"
+                url="https://skillicons.dev/icons?i=svelte"
+            />
+            <Tech
+                name="React"
+                path="react.svg"
+                url="https://skillicons.dev/icons?i=react"
+            />
+            <Tech
+                name="NextJS"
+                path="nextdotjs.svg"
+                url="https://skillicons.dev/icons?i=next"
+            />
             <Tech
                 name="Expo"
                 path="expo.svg"
                 imageclass="rounded-full bg-white"
             />
             <Tech name="Strapi" path="strapi.svg" />
-            <Tech name="Supabase" path="supabase.svg" />
-            <Tech name="NodeJS" path="nodejs.svg" />
-            <Tech name="MySQL" path="mysql.svg" imageclass="rounded bg-white" />
-            <Tech name="PostgreSQL" path="postgresql.svg" />
-            <Tech name="Java" path="java.svg" />
+            <Tech
+                name="Supabase"
+                path="supabase.svg"
+                url="https://skillicons.dev/icons?i=supabase"
+            />
+            <Tech
+                name="NodeJS"
+                path="nodejs.svg"
+                url="https://skillicons.dev/icons?i=nodejs"
+            />
+            <Tech
+                name="Express"
+                path=""
+                url="https://skillicons.dev/icons?i=express"
+            />
+            <Tech
+                name="NestJS"
+                path=""
+                url="https://skillicons.dev/icons?i=nestjs"
+            />
+            <Tech
+                name="Prisma"
+                path=""
+                url="https://skillicons.dev/icons?i=prisma"
+            />
+            <Tech
+                name="Docker"
+                path=""
+                url="https://skillicons.dev/icons?i=docker"
+            />
+            <Tech
+                name="Redis"
+                path=""
+                url="https://skillicons.dev/icons?i=redis"
+            />
+            <Tech
+                name="MySQL"
+                path="mysql.svg"
+                url="https://skillicons.dev/icons?i=mysql"
+            />
+            <Tech
+                name="PostgreSQL"
+                path="postgresql.svg"
+                url="https://skillicons.dev/icons?i=postgresql"
+            />
+            <Tech
+                name="Java"
+                path="java.svg"
+                url="https://skillicons.dev/icons?i=java"
+            />
             <Tech name="SpigotMC" path="spigotmc.svg" />
             <Tech name="PaperMC" path="papermc.svg" />
         </div>

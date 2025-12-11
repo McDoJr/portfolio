@@ -131,6 +131,11 @@
                 url="https://skillicons.dev/icons?i=postgresql"
             />
             <Tech
+                name="Git"
+                path="postgresql.svg"
+                url="https://skillicons.dev/icons?i=git"
+            />
+            <Tech
                 name="Java"
                 path="java.svg"
                 url="https://skillicons.dev/icons?i=java"
